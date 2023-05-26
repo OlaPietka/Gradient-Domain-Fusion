@@ -20,7 +20,7 @@ Poisson blending is a technique that allows us to seamlessly combine two images.
 
 Equation 1: Poisson equation
 
-$$\min_{v'} \sum_{i\in M,\ j\in N_i\cap M} ((v'_i - v'_j) - (s_i - s_j))^2 + \sum_{i\in M,\ j\in N_i\cap M^c} ((v'_i - t_j) - (s_i - s_j))^2$$
+$\min_{v'} \sum_{i\in M,\ j\in N_i\cap M} ((v'_i - v'_j) - (s_i - s_j))^2 + \sum_{i\in M,\ j\in N_i\cap M^c} ((v'_i - t_j) - (s_i - s_j))^2$
 
 Below you can find the results achieved with Poisson Blending:
 
