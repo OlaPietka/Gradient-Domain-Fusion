@@ -34,9 +34,9 @@ Background image            |  Object image  |  Blended image
 The key distinction between Poisson blending and mixed gradient blending is that mixed gradient blending directly blends the gradients of the source and target images. This approach might cause some visible seams or artifacts. However, in some cases, these artifacts may be desirable, such as in the case of brick lines.
 
 Equation 2: Mixed gradient blending equation
-
-$\min_{v'} \sum_{i\in M,\ j\in N_i\cap M} ((v'_i - v'_j) - g_{ij})^2 + \sum_{i\in M,\ j\in N_i\cap M^c} ((v'_i - t_j) - g_{ij})^2$
-
+```math
+\min_{v'} \sum_{i\in M,\ j\in N_i\cap M} ((v'_i - v'_j) - g_{ij})^2 + \sum_{i\in M,\ j\in N_i\cap M^c} ((v'_i - t_j) - g_{ij})^2
+```
 Here are the results produced by Mixed Gradients:
 
 Background image            |  Object image  |  Blended image
@@ -58,9 +58,9 @@ Background image            |  Object image  |  Blended image
 Poisson Sharpening aims to augment the change in pixel values at edges of an image. This approach is derived from the Poisson equation.
 
 Equation 3: Poisson Sharpening equation
-
-$\min_{v'} \sum_{i} (v'_i - s_i)^2 + \sum_{i,\ j\in N_i} ((v'_i - v'_j) - \alpha(s_i - s_j))^2$
-
+```math
+\min_{v'} \sum_{i} (v'_i - s_i)^2 + \sum_{i,\ j\in N_i} ((v'_i - v'_j) - \alpha(s_i - s_j))^2
+```
 The results achieved with Poisson Sharpening can be found below:
 
 Original image            |  Sharpen image  
@@ -73,9 +73,9 @@ Original image            |  Sharpen image
 Poisson Color Transfer aims to apply a color style from a source image onto a target image, while preserving its gradients. This method is also derived from the Poisson equation.
 
 Equation 4: Poisson Color Transfer equation
-
-$\min_{v'} \sum_{i,\ n\in RGB} (v'_i - \alpha(t_i - avg(t_n) * \frac{std(t_n)}{std(s_n)} + avg(s_n)))^2 + \sum_{i,\ j\in N_i} ((v'_i - v'_j) - (s_i - s_j))^2$
-
+```math
+\min_{v'} \sum_{i,\ n\in RGB} (v'_i - \alpha(t_i - avg(t_n) * \frac{std(t_n)}{std(s_n)} + avg(s_n)))^2 + \sum_{i,\ j\in N_i} ((v'_i - v'_j) - (s_i - s_j))^2
+```
 Here is the outcome of using Poisson Color Transfer:
 
 
