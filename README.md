@@ -2,8 +2,6 @@
 
 This project explores the power and potential of gradient-domain processing - a sophisticated method for combining multiple images by recognizing and processing their gradients and edges to create a high-quality output image. Various techniques such as Poisson Blending, Mixed Gradients, Laplacian pyramid blending, Poisson Sharpening, Poisson Color Transfer, and Poisson Color2Gray were employed.
 
-This project explores the power and potential of gradient-domain processing - a sophisticated method for combining multiple images by recognizing and processing their gradients and edges to create a high-quality output image. Various techniques such as Poisson Blending, Mixed Gradients, Laplacian pyramid blending, Poisson Sharpening, Poisson Color Transfer, and Poisson Color2Gray were employed.
-
 A detailed analysis of the project can be found in the [report](https://github.com/OlaPietka/Gradient-Domain-Fusion/blob/main/AnalysisReport.pdf), which provides in-depth explanations, methodologies, and evaluation of the results.
 
 ## Table of Contents
